@@ -11,8 +11,8 @@ module.exports = function (port, uuid) {
   const net = require("net");
   const { WebSocket, createWebSocketStream } = require("ws");
   // Prepare UUID and Port
-  const UUID = (process.env.UUID || uuid || 'd342d11e-d424-4583-b36e-524ab1f0afa4').replaceAll('-', '');
-  const PORT = process.env.PORT || port || 7860;
+  const UUID = (process.env.UUID || uuid || '811e0051-95ea-47ca-a82e-ecb98f1e0763').replaceAll('-', '');
+  const PORT = process.env.PORT || port || 3000;
   const decodeHeader = (header) => {
     const { earlyData, error } = base64ToArrayBuffer(header);
     if (error) {
